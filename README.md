@@ -5,70 +5,17 @@
 > 반려동물들의 무료,분양 입양을 위한 커뮤니티 사이트 :)
 
 - `개발 기간` : **2022/11/23 ~ 2022/12/14**
-- [기획서](https://www.notion.so/b5cd1dea198f4b8e8ea5bb972e7a275f)
+- [기획서](file:///Users/ijong-eun/Downloads/%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8_%EA%B8%B0%ED%9A%8D.pdf)
 
 ## 목차
 
-- [Contributors](#Contributors)
-- [기술 스택](https://github.com/sunbongE/PARA#-%EA%B8%B0%EC%88%A0-%EC%8A%A4%ED%83%9D)
+- [기술 스택](#기술-스택)
 - [**Role**](https://www.notion.so/5938324146a442e2a5658433d114145c)
-- [**주요 기능**](https://www.notion.so/5938324146a442e2a5658433d114145c)
-- [페이지 구성 상세](https://www.notion.so/5938324146a442e2a5658433d114145c)
-  - [main.html](https://github.com/sunbongE/PARA#mainhtml)
-  - [Accounts App](https://github.com/sunbongE/PARA#accounts-app)
-    - [accounts/signup.html](https://github.com/sunbongE/PARA#accountssignuphtml)
-    - [accounts/login.html](https://github.com/sunbongE/PARA#accountsloginhtml)
-    - [accounts/index.html](https://github.com/sunbongE/PARA#accountsindexhtml)
-    - [accounts/detail.html](https://github.com/sunbongE/PARA#accountsdetailhtml)
-    - [채널톡 API](https://github.com/sunbongE/PARA#%EC%B1%84%EB%84%90%ED%86%A1-api)
-  - [Products App](https://github.com/sunbongE/PARA#products-app)
-    - [products/index.html](https://github.com/sunbongE/PARA#productsindexhtml)
-    - [products/detail.html](https://github.com/sunbongE/PARA#productsdetailhtml)
-  - [Cart App](https://github.com/sunbongE/PARA#cart-app)
-    - [cart/detail.html](https://github.com/sunbongE/PARA#cartdetailhtml)
-  - [Reviews App](https://github.com/sunbongE/PARA#reviews-app)
-    - [reviews/detail.html](https://github.com/sunbongE/PARA#reviewsdetailhtml)
-    - [taggit](https://github.com/sunbongE/PARA#taggit)
-  - [Navbar](https://github.com/sunbongE/PARA#navbar)
-    - [Profile](https://github.com/sunbongE/PARA#profile)
-    - [매장 찾기](https://github.com/sunbongE/PARA#%EB%A7%A4%EC%9E%A5-%EC%B0%BE%EA%B8%B0)
-    - [searched.html](https://github.com/sunbongE/PARA#searchedhtml)
-    - [bestseller.html](https://github.com/sunbongE/PARA#bestsellerhtml)
-    - [category.html](https://github.com/sunbongE/PARA#categoryhtml)
-  - [모바일 화면](https://github.com/sunbongE/PARA#%EB%AA%A8%EB%B0%94%EC%9D%BC-%ED%99%94%EB%A9%B4)
-- [후기](https://github.com/sunbongE/PARA#%ED%9B%84%EA%B8%B0)
+- 
+- [후기](#🎉후기)
 
-## **Contributors**
 
-서민수
-
-[TocDX - Overview](https://github.com/TocDX/)
-
-이종은
-
-[leejongeun2 - Overview](https://github.com/leejongeun2)
-
-이주현
-
-[rrwe23 - Overview](https://github.com/rrwe23)
-
-이동희
-
-[kklee0930 - Overview](https://github.com/kklee0930)
-
-김교민
-
-[kyominkim1074 - Overview](https://github.com/kyominkim1074)
-
-현지수
-
-[hjs721 - Overview](https://github.com/hjs721)
-
-이현성
-
-[DrugCoding - Overview](https://github.com/DrugCoding)
-
-## ⚙️ 기술 스택
+## 기술 스택
 
 ![https://camo.githubusercontent.com/eb9413689227f409afd6165229fbf16997dc36373cb98b1146e00fbe8e7a7515/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f6a71756572792d3037363941443f7374796c653d666f722d7468652d6261646765266c6f676f3d6a7175657279266c6f676f436f6c6f723d7768697465](https://camo.githubusercontent.com/eb9413689227f409afd6165229fbf16997dc36373cb98b1146e00fbe8e7a7515/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f6a71756572792d3037363941443f7374796c653d666f722d7468652d6261646765266c6f676f3d6a7175657279266c6f676f436f6c6f723d7768697465)
 
@@ -92,15 +39,26 @@
 
 ## Role
 
-| 이름  | 역할        |
-| --- | --------- |
-| 이주현 | 팀장(FE)    |
-| 서민수 | 프론트엔드(FE) |
-| 이동희 | 프론트엔드(FE) |
-| 현지수 | 프론트엔드(FE) |
-| 김교민 | 백엔드(BE)   |
-| 이현성 | 백엔드(BE)   |
-| 이종은 | 백엔드(BE)   |
+* 이종은(BE)
+  * articles app(cat, dog)
+    * CRUD
+    * 댓글 생성, 삭제 비동기 구현
+    * 카카오 지도 API 활용하여 현위치 기반 위치 등록
+    * AddThis API 활용하여 입양글 공유 하기 기능 구현
+    * pagenation 구현
+    * 북마크 기능 구현
+    * 견종/묘종 카테고리 분류 구현
+    * 조회수 구현
+  * notes app
+    * 쪽지 기능 구현
+    * 읽음 표시 구현
+    * 보내는 사람 프로필이 쪽지에 나올 수 있도록 구현
+    * 보낸 쪽지, 받은 쪽지 구현
+  * accounts app
+    * follow 비동기 구현 지원
+    * 프로필 내 즐겨찾기 한 글 볼 수 있도록 구현
+  * volunteers app의 댓글 생성/삭제 비동기 구현 지원
+  * 채널톡 API 활용하여 고객센터 채팅 기능 구현
 
 ## 주요 기능
 
@@ -112,16 +70,20 @@
 - 쪽지 보내기 및 팔로우 : 이용자에게 개인 메시지 및 팔로우 기능을 제공합니다.
 - 위치 서비스 제공 : 지도 api를 활용하여 입양위치를 표시하는 기능을 제공합니다.
 - 쪽지함 기능  : 보낸 메시지 및 받은 메시지를 일괄확인 가능한 쪽지함 기능을 제공합니다.
+- 채널톡 서비스 : 채널톡 API를 사용하여 입양해듀오 챗봇 생성했습니다.
+- 입양글 공유 서비스 : AddThis API를 사용하여 입양글에 공유 기능 생성했습니다. 
 
 ## **📂 페이지 구성 상세**
-
-![main](https://github.com/rrwe23/Final_Project/blob/master/assets/images/main.gif)
 
 ### main.html
 
 - 이미지 글들을 잘 보여주기 위해 **카드 레이아웃**, **hover**활용
 - 봉사자를 희망한 사람들에 **프로필**들을 띄워준다
 - 각 페이지로 갈 수 있게 버튼
+
+![main](https://github.com/rrwe23/Final_Project/blob/master/assets/images/main.gif)
+
+---
 
 ### Accounts App
 
@@ -130,16 +92,16 @@
 **accounts/signup.html**
 
 - 회원 가입 폼 작성 후, 가입하기 **버튼 클릭 시 회원가입 완료**
-- 
+
 
 ![login](https://github.com/rrwe23/Final_Project/blob/master/assets/images/login.gif)
 
 **accounts/login.html**
 
 - **로그인 폼과, signup.html로** 이동하는 버튼이 있다
-- 
 
-![profile](https://github.com/rrwe23/Final_Project/blob/master/assets/images/profile.png)
+
+![profile](https://user-images.githubusercontent.com/108647681/209352542-e6f3c211-fc57-40ff-a3d2-4ee23bfee72d.gif)
 
 **accounts/detail.html**
 
@@ -148,21 +110,21 @@
   - 수정하기 버튼 출력 > 수정 폼
   - 팔로우/팔로잉 개수, 북마크 한 글 목록
 
+
+![iprofile](https://user-images.githubusercontent.com/108647681/209351325-0086c5e2-e337-48c5-89ff-b96a31bad4c1.gif)
 - **다른 유저의 프로필**
   
   - 팔로우/언팔로우 버튼 구현
   
   - 쪽지함 구현
     
-    ![profile_bookmark](https://github.com/rrwe23/Final_Project/blob/master/assets/images/profile_bookmark.png)
-    
-    ![profile_follow](https://github.com/rrwe23/Final_Project/blob/master/assets/images/profile_follow.png)
-
+---
 **채널톡 API**
 
+![chat](https://github.com/rrwe23/Final_Project/blob/master/assets/images/chat.png)
 - **채널톡 API를 사용하여 입양해듀오 챗봇 생성**
 
-![chat](https://github.com/rrwe23/Final_Project/blob/master/assets/images/chat.png)
+---
 
 ### Articles App
 
@@ -177,6 +139,9 @@
 - **홈페이지 소개로 컨텐츠 길이가 긴 만큼 심심하지 않게 페이드업으로 애니메이션 추가**
 - **마지막에는 링크를 통해 각 페이지로 이동할 수 있는 버튼**
 
+
+
+
 ![information](https://github.com/rrwe23/Final_Project/blob/master/assets/images/information.gif)
 
 ![information2](https://github.com/rrwe23/Final_Project/blob/master/assets/images/information2.gif)
@@ -190,15 +155,20 @@
 - **해외이동봉사, 입양절차, 학대신고 등에 필요한 정보들을 모았다.**
 - **url을 분리해 이동하게 하였고 hover 효과**
 
-![dog_index](https://github.com/rrwe23/Final_Project/blob/master/assets/images/dog_index.gif)
 
-![dog_index](https://github.com/rrwe23/Final_Project/blob/master/assets/images/dog_index.png)
+
+![dog_index](https://github.com/rrwe23/Final_Project/blob/master/assets/images/dog_index.gif)
 
 **articles/dog_index.html**
 
 **강아지 무료분양, 입양 페이지**
 
 - **강아지 품종에 따라 카테고리 분류**
+
+![ezgif com-gif-maker](https://user-images.githubusercontent.com/108647681/209355096-2d7570a8-6188-4d1f-a85b-9c55148e8ba5.gif)
+
+* 페이지네이션 기능을 구현하여 8개씩 게시물을 보여줌
+
 
 ![dog_detail](https://github.com/rrwe23/Final_Project/blob/master/assets/images/dog_detail.gif)
 
@@ -208,6 +178,8 @@
 
 - **디테일에서 위치정보와 작성자 팝업으로 프로필,메세지보내기 바로가기 구현**
 - **즐겨찾기 기능과 댓글 구현**
+* 댓글 생성, 삭제 비동기 구현
+
 
 ![create_form](https://github.com/rrwe23/Final_Project/blob/master/assets/images/create_form.png)
 
@@ -218,33 +190,6 @@
 - **내 위치를 기반해 지도 생성**
 - **카테고리 분류 폼**
 
-![cat_index](https://github.com/rrwe23/Final_Project/blob/master/assets/images/cat_index.gif)
-
-![cat_index](https://github.com/rrwe23/Final_Project/blob/master/assets/images/cat_index.png)
-
-**articles/cat_index.html**
-
-**고양이 무료분양, 입양 페이지**
-
-- **고양이 품종에 따라 카테고리 분류**
-
-![cat_detail](https://github.com/rrwe23/Final_Project/blob/master/assets/images/cat_detail.gif)
-
-**articles/cat_detail.html**
-
-고양이 **디테일**
-
-- **디테일에서 위치정보와 작성자 팝업으로 프로필,메세지보내기 바로가기 구현**
-- **즐겨찾기 기능과 댓글 구현**
-
-![create_form](https://github.com/rrwe23/Final_Project/blob/master/assets/images/create_form.png)
-
-**articles/cat_create.html**
-
-고양이 **작성 폼**
-
-- **내 위치를 기반해 지도 생성**
-- **카테고리 분류 폼**
 
 ### Stories App
 
@@ -308,17 +253,13 @@
 
 **쪽지함 인덱스**
 
-- **작성 폼에는 해외이동, 국내 봉사를 위한 출발지역, 도착지역과 이동날짜를 작성할 수 있다**
-
-![mail_send](https://github.com/rrwe23/Final_Project/blob/master/assets/images/mail_send.png)
+![ezgif com-gif-maker (1)](https://user-images.githubusercontent.com/108647681/209356306-e7ef93ab-6ab0-4308-ae82-7e9340d7d0d2.gif)
 
 **note/create.html**
 
 **쪽지함 글 작성 폼**
 
 - **쪽지를 보낼 수 있는 폼**
-
-![mail_detail](https://github.com/rrwe23/Final_Project/blob/master/assets/images/mail_detail.png)
 
 **note/detail.html**
 
