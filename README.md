@@ -1,17 +1,17 @@
-# 😻입양해듀오😻
+bㅠ# 😻입양해듀오😻
 
 > 배포주소: http://adoptduo-env.eba-mwfvzn6n.ap-northeast-2.elasticbeanstalk.com/
 > 
 > 반려동물들의 무료,분양 입양을 위한 커뮤니티 사이트 :)
 
 - `개발 기간` : **2022/11/23 ~ 2022/12/14**
-- [기획서](file:///Users/ijong-eun/Downloads/%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8_%EA%B8%B0%ED%9A%8D.pdf)
+- [기획서](https://hg-edu.notion.site/b5cd1dea198f4b8e8ea5bb972e7a275f)
 
 ## 목차
 
 - [기술 스택](#기술-스택)
-- [**Role**](https://www.notion.so/5938324146a442e2a5658433d114145c)
-- 
+- [**Role**](#role)
+- [페이지 구성 상세](#📂-페이지-구성-상세)
 - [후기](#🎉후기)
 
 
@@ -58,7 +58,104 @@
     * follow 비동기 구현 지원
     * 프로필 내 즐겨찾기 한 글 볼 수 있도록 구현
   * volunteers app의 댓글 생성/삭제 비동기 구현 지원
+  * stories app의 다중 이미지 등록 기능 구현
   * 채널톡 API 활용하여 고객센터 채팅 기능 구현
+
+
+## 🗄 File Setting
+📦accounts
+ ┣ 📂templates
+ ┃ ┗ 📂accounts
+ ┃ ┃ ┣ 📜change_password.html
+ ┃ ┃ ┣ 📜detail.html
+ ┃ ┃ ┣ 📜index.html
+ ┃ ┃ ┣ 📜login.html
+ ┃ ┃ ┣ 📜signup.html
+ ┃ ┃ ┣ 📜social_login.html
+ ┃ ┃ ┗ 📜update.html
+ ┣ 📜admin.py
+ ┣ 📜apps.py
+ ┣ 📜exception.py
+ ┣ 📜forms.py
+ ┣ 📜models.py
+ ┣ 📜tests.py
+ ┣ 📜urls.py
+ ┗ 📜views.py
+
+📦articles
+ ┣ 📂templates
+ ┃ ┗ 📂articles
+ ┃ ┃ ┣ 📜cat.html
+ ┃ ┃ ┣ 📜cat_detail.html
+ ┃ ┃ ┣ 📜catform.html
+ ┃ ┃ ┣ 📜dog.html
+ ┃ ┃ ┣ 📜dog_detail.html
+ ┃ ┃ ┣ 📜form.html
+ ┃ ┃ ┣ 📜index.html
+ ┃ ┃ ┣ 📜info_adopt.html
+ ┃ ┃ ┣ 📜info_declartation.html
+ ┃ ┃ ┣ 📜information.html
+ ┃ ┃ ┣ 📜introduction.html
+ ┣ 📜admin.py
+ ┣ 📜apps.py
+ ┣ 📜forms.py
+ ┣ 📜models.py
+ ┣ 📜tests.py
+ ┣ 📜urls.py
+ ┗ 📜views.py
+
+ 📦notes
+ ┣ 📂templates
+ ┃ ┗ 📂notes
+ ┃ ┃ ┣ 📜detail.html
+ ┃ ┃ ┣ 📜index.html
+ ┃ ┃ ┣ 📜index2.html
+ ┃ ┃ ┗ 📜send.html
+ ┣ 📜admin.py
+ ┣ 📜apps.py
+ ┣ 📜form.py
+ ┣ 📜models.py
+ ┣ 📜tests.py
+ ┣ 📜urls.py
+ ┗ 📜views.py
+
+ 📦pjt
+ ┣ 📜__init__.py
+ ┣ 📜asgi.py
+ ┣ 📜settings.py
+ ┣ 📜urls.py
+ ┗ 📜wsgi.py
+
+
+ 📦stories
+ ┣ 📂templates
+ ┃ ┗ 📂stories
+ ┃ ┃ ┣ 📜create.html
+ ┃ ┃ ┣ 📜detail.html
+ ┃ ┃ ┣ 📜index.html
+ ┃ ┃ ┗ 📜update.html
+ ┣ 📜admin.py
+ ┣ 📜apps.py
+ ┣ 📜forms.py
+ ┣ 📜models.py
+ ┣ 📜tests.py
+ ┣ 📜urls.py
+ ┗ 📜views.py
+
+ 📦volunteers
+ ┣ 📂templates
+ ┃ ┗ 📂volunteers
+ ┃ ┃ ┣ 📜create.html
+ ┃ ┃ ┣ 📜detail.html
+ ┃ ┃ ┣ 📜index.html
+ ┃ ┃ ┗ 📜update.html
+ ┣ 📜admin.py
+ ┣ 📜apps.py
+ ┣ 📜forms.py
+ ┣ 📜models.py
+ ┣ 📜tests.py
+ ┣ 📜urls.py
+ ┗ 📜views.py
 
 ## 주요 기능
 
@@ -93,13 +190,15 @@
 
 - 회원 가입 폼 작성 후, 가입하기 **버튼 클릭 시 회원가입 완료**
 
+</br>
 
 ![login](https://github.com/rrwe23/Final_Project/blob/master/assets/images/login.gif)
 
 **accounts/login.html**
 
-- **로그인 폼과, signup.html로** 이동하는 버튼이 있다
+- **로그인 폼과, signup.html로** 이동하는 버튼이 있음.
 
+</br>
 
 ![profile](https://user-images.githubusercontent.com/108647681/209352542-e6f3c211-fc57-40ff-a3d2-4ee23bfee72d.gif)
 
@@ -110,6 +209,7 @@
   - 수정하기 버튼 출력 > 수정 폼
   - 팔로우/팔로잉 개수, 북마크 한 글 목록
 
+</br>
 
 ![iprofile](https://user-images.githubusercontent.com/108647681/209351325-0086c5e2-e337-48c5-89ff-b96a31bad4c1.gif)
 - **다른 유저의 프로필**
@@ -121,7 +221,8 @@
 ---
 **채널톡 API**
 
-![chat](https://github.com/rrwe23/Final_Project/blob/master/assets/images/chat.png)
+![ezgif com-gif-maker (4)](https://user-images.githubusercontent.com/108647681/209361566-4d2f083e-6261-4356-b5d9-462b989f16b6.gif)
+
 - **채널톡 API를 사용하여 입양해듀오 챗봇 생성**
 
 ---
@@ -139,7 +240,7 @@
 - **홈페이지 소개로 컨텐츠 길이가 긴 만큼 심심하지 않게 페이드업으로 애니메이션 추가**
 - **마지막에는 링크를 통해 각 페이지로 이동할 수 있는 버튼**
 
-
+</br>
 
 
 ![information](https://github.com/rrwe23/Final_Project/blob/master/assets/images/information.gif)
@@ -155,20 +256,23 @@
 - **해외이동봉사, 입양절차, 학대신고 등에 필요한 정보들을 모았다.**
 - **url을 분리해 이동하게 하였고 hover 효과**
 
-
+</br>
 
 ![dog_index](https://github.com/rrwe23/Final_Project/blob/master/assets/images/dog_index.gif)
 
 **articles/dog_index.html**
 
-**강아지 무료분양, 입양 페이지**
+**강아지 무료분양, 입양 페이지(고양이 메뉴도 있으나, 강아지와 기능, 프런트 동일하여 강아지만 기재)**
 
 - **강아지 품종에 따라 카테고리 분류**
+
+</br>
 
 ![ezgif com-gif-maker](https://user-images.githubusercontent.com/108647681/209355096-2d7570a8-6188-4d1f-a85b-9c55148e8ba5.gif)
 
 * 페이지네이션 기능을 구현하여 8개씩 게시물을 보여줌
 
+</br>
 
 ![dog_detail](https://github.com/rrwe23/Final_Project/blob/master/assets/images/dog_detail.gif)
 
@@ -178,19 +282,21 @@
 
 - **디테일에서 위치정보와 작성자 팝업으로 프로필,메세지보내기 바로가기 구현**
 - **즐겨찾기 기능과 댓글 구현**
-* 댓글 생성, 삭제 비동기 구현
+- 댓글 생성, 삭제 비동기 구현
 
+</br>
 
-![create_form](https://github.com/rrwe23/Final_Project/blob/master/assets/images/create_form.png)
+![ezgif com-gif-maker (2)](https://user-images.githubusercontent.com/108647681/209358966-a3a3c2fc-8ff2-4554-b423-51640c39e051.gif)
+
 
 **articles/dog_create.html**
 
 **강아지 작성 폼**
 
 - **내 위치를 기반해 지도 생성**
-- **카테고리 분류 폼**
+- **견종/묘종 카테고리 선택 가능**
 
-
+---
 ### Stories App
 
 ![stories_index](https://github.com/rrwe23/Final_Project/blob/master/assets/images/stories_index.png)
@@ -201,6 +307,8 @@
 
 - **반려동물 자랑 글, 입,분양 후기 등 자유게시판 형식**
 
+</br>
+
 ![stories_detail](https://github.com/rrwe23/Final_Project/blob/master/assets/images/stories_detail.gif)
 
 **stories/detail.html**
@@ -209,14 +317,20 @@
 
 - **심플한 디테일, 댓글, 좋아요 구현**
 
-![stories_form](https://github.com/rrwe23/Final_Project/blob/master/assets/images/stories_form.png)
+</br>
+
+
+![stories_form](![ezgif com-gif-maker (3)](https://user-images.githubusercontent.com/108647681/209360163-76edfe34-baf4-463c-9caa-d6e3b0caa928.gif)
+)
 
 **stories/create.html**
 
  **스토리 글 작성 폼**
 
 - **간단한 글 작성과 이미지를 첨부해도되고 안해도 됨**
+- **이미지 여러개 선택하여 첨부 가능하도록 다중이미지 기능 구현(이미지 모델 외래키 연결)**
 
+---
 ### Volrunteers App
 
 ![volunteer_index](https://github.com/rrwe23/Final_Project/blob/master/assets/images/volunteer_index.gif)
@@ -227,6 +341,9 @@
 
 - **상단에는 봉사를 지원한 유저들의 프로필을 지나가게 함**
 
+</br>
+
+
 ![volunteer_form](https://github.com/rrwe23/Final_Project/blob/master/assets/images/volunteer_form.png)
 
 **volunteers/create.html**
@@ -234,6 +351,9 @@
 **봉사자 글 작성 폼**
 
 - **작성 폼에는 해외이동, 국내 봉사를 위한 출발지역, 도착지역과 이동날짜를 작성할 수 있다**
+
+</br>
+
 
 ![volunteers_detail](https://github.com/rrwe23/Final_Project/blob/master/assets/images/volunteers_detail.png)
 
@@ -243,15 +363,18 @@
 
 - **수정, 삭제, 댓글 작성이 가능**
 
-- **댓글 작성은 비동기 처리**
+- **댓글 작성, 삭제, 북마크는 비동기 처리**
 
+</br>
+
+---
 ### Note App
 
 ![mailbox](https://github.com/rrwe23/Final_Project/blob/master/assets/images/mailbox.png)
 
 **note/index.html**
 
-**쪽지함 인덱스**
+**쪽지함 접속 시, 받은 쪽지를 확인할 수 있으며, 읽음/안읽음 여부 확인 가능**
 
 ![ezgif com-gif-maker (1)](https://user-images.githubusercontent.com/108647681/209356306-e7ef93ab-6ab0-4308-ae82-7e9340d7d0d2.gif)
 
@@ -264,6 +387,7 @@
 **note/detail.html**
 
 - **보낸/받은 메일의 디테일**
+
 
 ***
 
