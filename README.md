@@ -2,7 +2,7 @@
 
 > 배포주소: http://adoptduo-env.eba-mwfvzn6n.ap-northeast-2.elasticbeanstalk.com/
 > 
-> 반려동물들의 무료,분양 입양을 위한 커뮤니티 사이트 
+> 반려동물들의 무료,분양 입양을 위한 커뮤니티 사이트 :)
 
 - `개발 기간` : **2022/11/23 ~ 2022/12/14**
 - [기획서](https://www.notion.so/b5cd1dea198f4b8e8ea5bb972e7a275f)
